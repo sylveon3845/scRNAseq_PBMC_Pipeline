@@ -39,3 +39,13 @@ A complete scRNA-seq preprocessing and clustering pipeline for PBMC 3k dataset u
 圖中清晰地將細胞分成了 **14 個群集 (0-13)**，這些群集在基因表現上高度相似，代表 PBMC 樣本內的多種細胞類型 (如 T-cells, B-cells, Monocytes)。
 
 **重現性備註：** 為確保分群結果穩定，本專案在 UMAP 與 Leiden 演算法中統一設定了 **亂數種子 (Random State = 42)**。
+
+---
+### 💾 專案數據資產與可重現性 (Final Data Asset)
+
+本專案的最終輸出檔案是經過清洗、標準化、降維和分群的 `AnnData` 物件：`pbmc_processed_for_ml.h5ad`。
+
+由於該檔案體積較大 (約 60MB)，它已被託管在雲端，作為後續 **Project 03/04 機器學習分類器** 的輸入數據。
+
+**下載連結：**
+請前往 **`03/04_PBMC_TCell_Classifier`** 專案的 `README.md` 中，查看該檔案的具體雲端下載連結。
